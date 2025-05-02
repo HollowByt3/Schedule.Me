@@ -16,9 +16,8 @@ namespace c969
         public string contact { get; set; }
         public string type { get; set; }
         public string url { get; set; }
-        public DateTime start { get; set; }
+        public DateTime Start { get; set; }
         public DateTime end { get; set; }
-        public int User_ID { get; set; }
         public int Customer_ID { get; set; }
         public static BindingList<appointment> appointments { get;private set; }
     }

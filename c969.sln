@@ -5,6 +5,11 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c969", "c969\c969.csproj", "{9E7AFED2-F3AF-4986-8FA6-3349C2939E27}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB2A25F6-6324-4A8D-AE9C-A6616DF939F4}"
+	ProjectSection(SolutionItems) = preProject
+		Login_History.txt = Login_History.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

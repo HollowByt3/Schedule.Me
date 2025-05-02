@@ -29,7 +29,7 @@ namespace c969
             {
 
                 // Check if the new appointment overlaps with any existing appointment
-                if (start >= appointment.end && end <= appointment.start)
+                if (start >= appointment.end && end <= appointment.Start)
                 {
                     return true;
                 }

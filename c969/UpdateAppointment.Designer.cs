@@ -272,28 +272,27 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxUrl;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxCustoID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox textBoxID;
         public System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxLoca;
-        private System.Windows.Forms.TextBox textBoxDes;
-        private System.Windows.Forms.TextBox textBoxType;
-        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Title;
+        public System.Windows.Forms.TextBox textBoxName;
+        public System.Windows.Forms.TextBox textBoxUrl;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBoxCustoID;
+        public System.Windows.Forms.TextBox textBoxLoca;
+        public System.Windows.Forms.TextBox textBoxDes;
+        public System.Windows.Forms.TextBox textBoxType;
     }
 }

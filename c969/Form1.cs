@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Resources;
@@ -13,6 +14,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx.Expr;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -74,6 +76,20 @@ namespace c969
                 
                 Scheduler newForm = new Scheduler();
                 newForm.Show();
+                string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                // Format log entry
+                string logEntry = $"{timestamp} - {UnametextBox.Text}";
+                string logFilePath = "C:\\Users\\LabUser\\source\\repos\\c969\\Login_History.txt";
+                // Append to file
+                using (StreamWriter writer = new StreamWriter(logFilePath, true))
+                {
+                    writer.WriteLine(logEntry);
+                }
+
+                MessageBox.Show("Login recorded successfully.");
+
+                
                 return;
             }
             while(isCultureJapanese)
@@ -114,6 +130,20 @@ namespace c969
                 
                 Scheduler newForm = new Scheduler();
                 newForm.Show();
+
+                string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                // Format log entry
+                string logEntry = $"{timestamp} - {UnametextBox.Text}";
+                string logFilePath = "C:\\Users\\LabUser\\source\\repos\\c969\\Login_History.txt";
+                // Append to file
+                using (StreamWriter writer = new StreamWriter(logFilePath, true))
+                {
+                    writer.WriteLine(logEntry);
+                }
+
+                MessageBox.Show("Login recorded successfully.");
+
                 return;
             }
 
